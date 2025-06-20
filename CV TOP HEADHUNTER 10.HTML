@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV professionnel d'Ivanecxy Zambrano, Business Analyst Senior avec expertise en stratégie, performance opérationnelle et analyse de datos.">
+    <title>CV Ivanecxy Zambrano - Business Analyst Senior</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Box-Sizing for consistent layout */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #003366; /* Azul corporativo oscuro */
+            --secondary-color: #0056b3; /* Azul corporativo intermedio */
+            --accent-color: #e6f7ff; /* Azul muy claro para las píldoras de habilidades */
+            --text-color: #333; /* Texto principal */
+            --light-text-color: #555; /* Texto secundario, descripciones */
+            --bg-color: #ffffff; /* Fondo del CV */
+            --shadow-color: rgba(0, 0, 0, 0.08); /* Sombra suave */
+            --font-family-main: 'Roboto', sans-serif;
+            --font-family-title: 'Montserrat', sans-serif;
+        }
+
+        /* Estilos Generales */
+        body {
+            font-family: var(--font-family-main);
+            line-height: 1.5; /* Ajustado para un interlineado más justo */
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa; /* Fondo muy suave fuera del CV */
+            color: var(--text-color);
+            max-width: 21cm; /* Ancho A4 */
+            margin: 20px auto;
+            box-shadow: 0 4px 20px var(--shadow-color); /* Sombra más pronunciada para impacto */
+            background-color: var(--bg-color);
+            border-radius: 8px; /* Bordes ligeramente redondeados */
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-family-title);
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Un poco más grande para el nombre */
+            text-align: center;
+            margin-bottom: 5px;
+            text-transform: uppercase; /* Nombre en mayúsculas para impacto */
+            letter-spacing: 1.5px;
+        }
+
+        h2 {
+            font-size: 1.5em; /* Reducido para los títulos de sección */
+            border-bottom: 1.5px solid var(--secondary-color); /* Más fino */
+            padding-bottom: 8px;
+            margin-top: 25px; /* Espaciado ligeramente reducido */
+        }
+
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 10px; /* Reducido ligeramente */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 4px; /* Ajustado para un interlineado más justo */
+            padding-left: 25px;
+            position: relative;
+            font-size: 0.98em; /* Base para las listas */
+        }
+
+        ul li::before {
+            content: '➤'; /* Flecha moderna para los puntos */
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            top: 4px;
+        }
+
+        /* Estilos del Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px; /* Espaciado reducido */
+            padding-bottom: 10px; /* Espaciado reducido */
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .subtitle {
+            font-size: 1.25em;
+            color: var(--light-text-color);
+            margin-top: 5px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        /* Estilos de Contacto */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que los elementos envuelvan si la pantalla es muy estrecha */
+            gap: 10px; /* Espaciado entre elementos reducido aún más para una sola línea */
+            font-size: 0.85em; /* Tamaño de letra disminuido para que encaje en una línea */
+            color: var(--light-text-color);
+            margin-bottom: 20px; /* Espaciado reducido */
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+        }
+        .contact-info div span {
+            margin-right: 8px;
+            color: var(--secondary-color);
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos de la Maquetación Principal */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px; /* Espacio entre columnas ligeramente reducido */
+        }
+
+        /* Columnas */
+        .left-column {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .right-column {
+            flex: 2;
+            min-width: 350px;
+        }
+
+        /* Secciones */
+        .section-block {
+            margin-bottom: 25px;
+            padding: 18px;
+            background-color: #fdfefe;
+            border-left: 2px solid var(--secondary-color);
+            border-radius: 6px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+        }
+
+        /* Sección de Formación Académica a ancho completo */
+        .full-width-section {
+            width: 100%;
+            margin-top: 20px; /* Espaciado superior e inferior reducido */
+            margin-bottom: 20px;
+            padding: 15px; /* Padding reducido */
+            background-color: #fdfefe;
+            border-left: 2px solid var(--secondary-color);
+            border-radius: 6px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            flex: none;
+            order: 3;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 10px; /* Espaciado reducido para más compactación */
+            padding-bottom: 8px; /* Espaciado reducido */
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+            font-size: 1.05em;
+        }
+        .company-name {
+            font-weight: 400;
+            color: var(--light-text-color);
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        .job-dates {
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 4px;
+        }
+        .job-description ul li {
+            font-size: 0.88em; /* Tamaño de las descripciones de experiencia */
+            font-weight: normal; /* Asegura que no haya negritas inesperadas */
+        }
+
+        /* Estilo para el párrafo de perfil profesional para que coincida */
+        .profile-description-text {
+            font-size: 0.88em; /* Mismo tamaño que las descripciones de experiencia */
+            font-weight: normal; /* Asegura que no haya negritas inesperadas */
+        }
+
+        .skill-category {
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            color: #1a2a40;
+            font-size: 1em;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        .skills-list span {
+            background-color: var(--accent-color);
+            color: #004085;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            border: 0.5px solid #b3d9ff;
+        }
+
+        .language-item {
+            margin-bottom: 6px;
+        }
+        .language-item strong {
+            color: var(--primary-color);
+        }
+
+        /* Pie de página para número de página */
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 0.85em;
+            color: #999;
+            padding-top: 12px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Media Queries para Responsividad (móviles vs. escritorio) */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                gap: 0;
+            }
+            .left-column, .right-column, .full-width-section {
+                flex: none;
+                width: 100%;
+                min-width: unset;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            body {
+                padding: 15px;
+            }
+            .contact-info {
+                flex-direction: column; /* En pantallas pequeñas, volvemos a columnas para los datos de contacto */
+                align-items: flex-start;
+                padding-left: 10px;
+            }
+            .contact-info div {
+                justify-content: flex-start;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .subtitle {
+                font-size: 1.05em;
+            }
+        }
+
+        /* Estilos para impresión */
+        @media print {
+            body {
+                margin: 0;
+                box-shadow: none;
+                max-width: none;
+                background-color: #fff;
+            }
+            header, .contact-info {
+                margin-bottom: 10px;
+            }
+            h2 {
+                page-break-before: always; /* Cada título de sección (h2) comienza en una nueva página */
+                margin-top: 15px;
+            }
+            .section-block, .experience-item, .education-item {
+                page-break-inside: avoid; /* Evita que los bloques se corten a mitad */
+            }
+            .main-content {
+                display: block; /* Vuelve a un flujo de bloque normal para impresión, más predecible */
+            }
+            .left-column, .right-column, .full-width-section {
+                width: 100%;
+                float: none;
+                page-break-inside: avoid;
+            }
+            .section-block {
+                box-shadow: none;
+                padding: 8px 0;
+                border-left: 1px solid var(--secondary-color);
+            }
+            footer {
+                display: block;
+                page-break-before: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ivanecxy Zambrano Torres</h1>
+        <p class="subtitle">Ingénieure Industrielle | Business Analyst Senior | Experte en Stratégie & Performance Opérationnelle</p>
+    </header>
+
+    <section class="contact-info">
+        <div><span>&#9993;</span> ivanecxy_zt@hotmail.com</div>
+        <div><span>&#128222;</span> +33683924834</div>
+        <div><span>&#128205;</span> Paris, Île-de-France, France</div>
+        <div><span>&#128279;</span> <a href="https://www.linkedin.com/in/ivanecxy" target="_blank">linkedin.com/in/ivanecxy</a></div>
+    </section>
+
+    <main class="main-content">
+        <div class="left-column">
+            <section class="section-block">
+                <h2>Compétences Techniques & Fonctionnelles</h2>
+                <div class="skill-category">Analyse de données & Business Intelligence</div>
+                <div class="skills-list">
+                    <span>Analyse et modélisation de données</span>
+                    <span>Visualisation de données (Power BI, Microsoft Excel - Avancé)</span>
+                    <span>Business Intelligence (BI)</span>
+                    <span>Analyse de mercado</span>
+                    <span>PROSPER</span>
+                    <span>SAHARA</span>
+                    <span>SROD</span>
+                    <span>WELL SHEET</span>
+                    <span>PCP Pump</span>
+                </div>
+                <div class="skill-category">Gestion de Projet & Amélioration Continue</div>
+                <div class="skills-list">
+                    <span>Gestion de projets durables</span>
+                    <span>Méthodologies: Kaizen</span>
+                    <span>Lean Manufacturing</span>
+                    <span>Six Sigma</span>
+                    <span>Méthode Toyota</span>
+                    <span>Amélioration continue</span>
+                </div>
+                <div class="skill-category">Stratégie & Développement Commercial</div>
+                <div class="skills-list">
+                    <span>Stratégies ESG et économie circulaire</span>
+                    <span>Stratégie d'entreprise et développement corporatif</span>
+                    <span>Analyse stratégique et coûts-avantages</span>
+                    <span>Planification stratégique</span>
+                </div>
+                <div class="skill-category">Opérations & Qualité</div>
+                <div class="skills-list">
+                    <span>Optimisation des processus</span>
+                    <span>Production pétrolière</span>
+                    <span>Santé, Sécurité et Environnement (HSE)</span>
+                    <span>Audit interne et conformité réglementaire</span>
+                    <span>Gestion de la qualité</span>
+                </div>
+                <div class="skill-category">Compétences Générales & Managériales</div>
+                <div class="skills-list">
+                    <span>Leadership visionnaire</span>
+                    <span>Communication interculturelle</span>
+                    <span>Pensée analytique et résolution de problèmes</span>
+                    <span>Gestion et éthique</span>
+                    <span>Adaptabilité, autonomía y espíritu de equipo</span>
+                    <span>Écologie et durabilité</span>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <h2>Langues</h2>
+                <ul>
+                    <li class="language-item"><strong>Español:</strong> Langue maternelle</li>
+                    <li class="language-item"><strong>Français:</strong> B2 (Courant - Certification B1 de la Sorbonne)</li>
+                    <li class="language-item"><strong>Anglais:</strong> C1 (Courant)</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section class="section-block">
+                <h2>Profil Professionnel</h2>
+                <p class="profile-description-text">Ingénieure Industrielle trilingue (français, espagnol, anglais) avec plus de 8 ans d'expérience avérée en analyse de données, optimisation opérationnelle et amélioration continue. Actuellement en Master of Science en Management, International Business & Corporate Development au CNAM Paris, j'allie une solide expertise technique à une vision stratégique des affaires et une orientation ESG. Je recherche activement des opportunités en tant que Analyste d'Affaires Senior (Business Analyst Senior) ou Consultante en Performance Opérationnelle, afin de piloter des projets d'envergure, d'analyser la performance complexe et de contribuer de manière significative à la prise de décision stratégique, axée sur l'impact tangible et la croissance durable.</p>
+            </section>
+
+            <section class="section-block">
+                <h2>Expérience Professionnelle</h2>
+
+                <div class="experience-item">
+                    <p class="job-title">Ingénieure Analyste en Optimisation de Production & Performance Opérationnelle</p>
+                    <p class="company-name">YPF | Argentine</p>
+                    <p class="job-dates">Avril 2018 – Sept. 2023 (5 ans 6 mois)</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Pilotage de la Performance : Analyse approfondie des données de production (Power BI) pour identifier les goulots d'étranglement et définir des stratégies visant une production pétrolière maximale et durable.</li>
+                            <li>Réduction des Coûts & Amélioration : Diminution de 10% des défaillances des puits de pétrole dans la région assignée, améliorant l'efficacité opérationnelle et réduisant les coûts de maintenance.</li>
+                            <li>Innovation Technologique : Conception et développement d'un dispositif innovant pour le diagnostic des systèmes hydrauliques, présenté lors de la conférence technique du Golfe San Jorge, démontrant des capacités de R&D.</li>
+                            <li>Gestion de Projet A-Z : Conduite d'analyses de défaillances, d'incidents qualité et mise en œuvre réussie de nouvelles technologies, assurant l'optimisation continue des processus.</li>
+                            <li>Planificación Stratégique : Élaboration et suivi de programmes d'extraction et d'approvisionnement pour minimiser les interruptions et maximiser l'efficacité des puits, contribuant directement aux objectifs de production.</li>
+                            <li>Maîtrise Technique : Expertise avérée sur PROSPER, SAHARA, SROD, WELL SHEET, PCP Pump.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <p class="job-title">Ingénieure Analyste en Optimisation des Processus & Stratégie HSE</p>
+                    <p class="company-name">Toyota Venezuela, CA. | Venezuela</p>
+                    <p class="job-dates">Mai 2015 – Mai 2017 (2 ans 1 mois)</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Développement du Capital Humain : Conception et déploiement de programmes de formation HSE innovants, augmentant l'engagement des employés de 40% envers les pratiques durables.</li>
+                            <li>Engagement & Sensibilisation : Lancement et organisation des premières Olympiades HSE, mobilisant plus de 100 collaborateurs et renforçant la culture de sécurité.</li>
+                            <li>Optimisation Administrative : Identification et élimination proactive des obstacles administrativos, menant à une simplification significative des processus opérationnels.</li>
+                            <li>Amélioration Logistique : Optimisation des plans d'expédition et de gestion logistique, réduisant les délais et les coûts.</li>
+                            <li>Conformité Réglementaire : Mise à jour et suivi rigoureux des exigences légales en matière de santé et de sécurité, assurant une conformité totale.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <p class="job-title">Ingénieure Analyste en Optimisation Logistique & Performance Opérationnelle</p>
+                    <p class="company-name">Inversiones Perfumessence | Caracas, Venezuela</p>
+                    <p class="job-dates">Janv. 2014 – Janv. 2015 (1 an 1 mois)</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Transformación Logistique : Réorganisation complète des flux logistiques, réduisant les inefficacités de 90% y optimizando la chaîne d'approvisionnement.</li>
+                            <li>Contrôle Qualité & Réduction d'Erreurs : Diminution de 80% des erreurs opérationnelles et administratives grâce à la mise en place d'un nuevo sistema de control, améliorant la fiabilité.</li>
+                            <li>Synchronisation Opérationnelle : Coordination efficace des achats, de la production et de la distribution via una refonte du sistema de inventario, assurant une meilleure réactivité.</li>
+                            <li>Amélioration de la Traçabilité : Implémentation d'un système de seguimiento de las órdenes, renforçant la traçabilité et l'efficacité des livraisons.</li>
+                            <li>Développement Commercial : Création et exécution de stratégies d'expansion, consolidant les relations clients et aboutissant à une reconnaissance pour l'excellence du service.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <p class="job-title">Stagiaire Ingénieure HSE & Support Conformité</p>
+                    <p class="company-name">Ovejita/Textiles Gams | Caracas, Venezuela</p>
+                    <p class="job-dates">Mai 2013 – Sept. 2013 (5 mois)</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Évaluation des Risques : Optimisation de l'Analyse de Sécurité au Travail (A.S.T.) dans les zones administratives, avec identification précise des risques et proposition de mesures préventives.</li>
+                            <li>Conformité et Diagnostic : Réalisation d'études réglementaires et de terrain para establecer des diagnostics conformes aux normes locales en vigueur.</li>
+                            <li>Prévention des Accidents : Mise en place proactive de mesures visant à réduire les accidents du travail et les maladies professionnelles.</li>
+                            <li>Renforcement des Processus : Contribution au renforcement de la conformité réglementaire et à l'optimisation des processus de sécurité.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="full-width-section">
+        <h2>Formation Académique</h2>
+        <div class="education-item">
+            <p class="job-title">Master of Science en Management, International Business and Corporate Development</p>
+            <p class="company-name">Conservatoire National des Arts et Métiers (CNAM)</p>
+            <p class="job-dates">Oct. 2024 – Sept. 2025 | Paris, France</p>
+        </div>
+        <div class="education-item">
+            <p class="job-title">Certificat annuel de langue et civilisation françaises (B1)</p>
+            <p class="company-name">Sorbonne Université</p>
+            <p class="job-dates">Oct. 2023 – Mai 2024 | Paris, France</p>
+        </div>
+        <div class="education-item">
+            <p class="job-title">Ingénieure Industrielle</p>
+            <p class="company-name">Universidad Nacional Experimental Politécnica "Antonio José de Sucre" (UNEXPO)</p>
+            <p class="job-dates">Oct. 2008 – Oct. 2014 | Venezuela</p>
+        </div>
+        <div class="education-item">
+            <p class="job-title">Programme de formation pour jeunes professionnels en production (Pétrole et Gaz)</p>
+            <p class="company-name">YPF S.A. (320 heures)</p>
+            <p class="job-dates">Avril 2018 – Juil. 2018 | Argentine</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Ivanecxy Zambrano Torres - Page 1 de 2</p>
+    </footer>
+</body>
+</html>
